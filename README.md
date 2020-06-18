@@ -62,4 +62,6 @@ CLF4 acc: 0.9766177270255574
 
 CLF4 f1: 0.9067245119305857
 
+Results did not improve that much. Should try adding more features into our model.
+
 ## Model Deployment:

@@ -43,13 +43,23 @@ RandomForestClassifier has the second best score but I chose this over LinearSVC
 
 Evaluation Metrics for tuning: auc roc score TPR vs FPR
 
-**Initial model, clf1** ROC Score: 0.9087301587301587
+**Initial model, clf1** 
+
+CLF1 roc: 0.9087301587301587
+
+CLF1 acc: 0.9749864056552474
+
+CLF1 f1: 0.8995633187772926
 
 1. Tuned n_estimators (500) and max_depth (94)
 2. Tuned max_features (auto) 
 
-**Final model, clf4** ROC Score: 0.9146825396825398
+**Final model, clf4**
 
+CLF 4 roc: 0.9146825396825398
 
+CLF 4 acc: 0.9766177270255574
+
+CLF 4 f1: 0.9067245119305857
 
 ## Model Deployment:

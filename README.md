@@ -18,7 +18,7 @@ Evaluation Metrics: Negative mean logistic loss (Can try mae/auc)
 5-fold cross validation
 
 1. Logistic Regression -0.04074115819049842
-2. LinearSVC (Best performance) -0.021717561246588465
+2. LinearSVC -0.021717561246588465 (Best performance)
 3. Random Forest -0.027817987134794823
 4. AdaBoost -0.04056049786250815
 5. XGBoost -0.030510824323127583

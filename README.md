@@ -45,7 +45,7 @@ Evaluation Metrics for tuning: auc roc score TPR vs FPR
 
 **Initial model** ROC Score: 0.9087301587301587
 
-1. Tuned n_estimators (550) and max_depth (94)
+1. Tuned n_estimators (500) and max_depth (94)
 2. Tuned max_features (auto) and max_samples (1)
 3. Tuned class_weight (auto), max_leaf_nodes (2), min_samples_split (2) and min_samples_leaf (2)
 

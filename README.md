@@ -11,7 +11,7 @@
 2. Concat with numerical variables
 3. Did not standardize/normalize the data (Could explore)
 
-## Model Testing: 
+## Model Testing with scikit-learn: 
 
 Evaluation Metrics: Negative mean logistic loss and ROC Score
 
@@ -33,6 +33,8 @@ Evaluation Metrics: Negative mean logistic loss and ROC Score
 4. AdaBoost 
 5. XGBoost 
 
+## Model Testing with Neural Networks: (to be done)
+
 ## Model Selection:
 
 RandomForestClassifier has the second best score but I chose this over LinearSVC since ensemble method works better in practise and has more hyperparameter tuning option.
@@ -48,5 +50,7 @@ Evaluation Metrics for tuning: auc roc score TPR vs FPR
 3. Tuned class_weight (auto), max_leaf_nodes (2), min_samples_split (2) and min_samples_leaf (2)
 
 **Final model** ROC Score: 
+
+
 
 ## Model Deployment:

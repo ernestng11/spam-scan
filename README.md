@@ -19,10 +19,15 @@ Evaluation Metrics: Negative mean logistic loss (Can try mae/auc)
 2. Linear SVC (Best performance)
 3. Random Forest
 4. AdaBoost
-5. XGBoost (Not done yet)
+5. XGBoost 
 
 ## Model Selection:
 
-## Model Tuning:
+## Model Tuning:(Random Forest)
+
+Evaluation Metrics for tuning: auc roc score TPR vs FPR
+
+1. Tuned n_estimators (550) and max_depth (94)
+2. 
 
 ## Model Deployment:

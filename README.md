@@ -13,15 +13,25 @@
 
 ## Model Testing: 
 
-Evaluation Metrics: Negative mean logistic loss (Can try mae/auc) 
+Evaluation Metrics: Negative mean logistic loss and ROC Score
 
 5-fold cross validation
+
+*neg_mean_log_loss*
 
 1. Logistic Regression -0.04074115819049842
 2. LinearSVC -0.021717561246588465 (Best performance)
 3. Random Forest -0.027817987134794823
 4. AdaBoost -0.04056049786250815
 5. XGBoost -0.030510824323127583
+
+*roc_auc_score* (to be tested)
+
+1. Logistic Regression 
+2. LinearSVC 
+3. Random Forest 
+4. AdaBoost 
+5. XGBoost 
 
 ## Model Selection:
 

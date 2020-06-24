@@ -38,8 +38,12 @@ def predict():
         vect2 = np.array([word_count, n_noun, n_verb, n_adj, n_adv])
         X = np.concatenate((vect, vect2.reshape((1, 5))), axis=1)
         pred = model.predict(X)
+        arr = model.predict_proba(X)[0]
+        pred_prob = arr[int(pred)]
+
         response = int(pred)
-    return render_template('result.html', prediction=response)
+        response_prob = pred_prob
+    return render_template('result.html', prediction=(response, response_prob))
 
 
 def check_pos_tag(x, flag):

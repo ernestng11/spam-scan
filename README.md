@@ -5,6 +5,10 @@
 1. POS tagging - Dropped pronoun counts since majority of its values are 0
 2. Word counts - Follows normal distribution
 
+-Test-
+1. Number of capital letters
+2. Number of integer values
+
 ## Data Preparation:
 
 1. TFIDF vectorize texts

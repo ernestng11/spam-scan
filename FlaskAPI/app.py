@@ -1,7 +1,15 @@
 import flask
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 import json
+import pandas as pd
+import pickle
+import numpy as np
 app = Flask(__name__)
+
+
+@app.route('/')
+def home():
+    return render_template('home.html')
 
 
 @app.route('/predict', methods=['POST'])
@@ -29,6 +37,8 @@ def predict():
         n_adv = check_pos_tag(message, 'adv')
         vect2 = np.array([word_count, n_noun, n_verb, n_adj, n_adv])
         X = np.concatenate((vect, vect2.reshape((1, 5))), axis=1)
+        pred = model.predict(X)
+        response = int(pred)
     return render_template('result.html', prediction=response)
 
 

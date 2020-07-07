@@ -17,15 +17,14 @@
 
         </div>
     </header>
-    <p style="color:blue;font-size:20;text-align: center;"><b>Results for Comment</b></p>
     <div class="results">
 
 
 
-        {% if prediction == 1 %}
-        <h2 style="color:red;">Spam</h2>
-        {% elif prediction == 0 %}
-        <h2 style="color:blue;">Not a Spam (It is a Ham)</h2>
+        {% if prediction[0] == 1 %}
+        <h2 style="color:red;">SPAM {{ prediction[1] }}%</h2>
+        {% elif prediction[0] == 0 %}
+        <h2 style="color:blue;">NOT SPAM {{ prediction[1] }}%</h2>
         {% endif %}
 
     </div>
